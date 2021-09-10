@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <!---
   Abiodun Abidemi
-  CSCI 5060
-  Project
+  PHP-Project
   --->
-<html>
+<html lang ="en-US">
 <head>
 	<meta charset="utf-8">
 	<title>Test database connection</title>
