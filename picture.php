@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <!---
   Abiodun Abidemi
-  CSCI 5060
-  Project
+  PHP-Project
   --->
   
 <?php
 	require('database.php');
 ?>  
-<html>
+<html lang = "en-US">
 <head>
     <meta charset = "utf-8">
 	<title> Picture </title>
