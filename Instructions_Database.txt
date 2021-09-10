@@ -1,0 +1,80 @@
+<!---
+  Abiodun Abidemi
+  CSCI 5060
+  Project
+  --->
+-- Database: `family`
+--
+INSTRUCTIONS TO CREATE THE DATABASE:
+I started APACHE and MYSQL, then go to PHPMyAdmin page to access the Database server(MySQL).
+To create my database "family" and then the required table"members" for my project, 
+I did this through the "User account" tab by clicking on the "User account" to create a User and then create the database "family" thereafter. 
+The steps below gives the instructions on how I did this:
+
+Step1: Click on the "User account" tab on phpMyAdmin.
+Step2: Click on "Add User account" just below a pre-defined table for User permission.
+Step3: From the Add User account page, we will create a Username as "family" which is the same with the database name. 
+On the same page, under login information, we will set the host name to "localhost" and create a password for the User and the database.
+Step4: Just immediately under this login information columns, is the "Database for User account", there are two check box below, 
+We will check the box that corresponds to " Create database with same name and grant all privileges", this allows us create the database 
+automatically with the same username "family" with the User having the permissions to interact with the database.
+Step5: Having completed filling the information, we click on "Go" on the bottom right.
+Step6: A quick overview of the database server after click on "Go" will display "You have added a new user" with a pass mark in green on the left hand side, 
+we will see the new database account created, "family". We will also see the new user account added "family" when we click on "User account" with host name as "localhost" 
+and password column indicating "Yes".
+Step7: To create our table "members", We will click on the database "family" created on the left hand side.
+Step8: After selecting the database "family", on the right hand side in white rectangular boxes, 
+we will see "Create table", "Name" , and "Number of Columns". To create the table "members", we will write "members" in the Name box to specify the name of the table 
+I will be working with and 11 in the Number of columns box to indicate we are creating 11 columns the we click "Go" on the bottom right. 
+We might want to add coumns after specifying certain number of colums we intended to create, it still very possible.
+Step8: After clicking the "Go" button, we will fill the following information in the columns of the table:
+`member_id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(20) NOT NULL,
+  `date_of_birth` date NOT NULL,
+  `year` int(11) NOT NULL,
+  `heights` float NOT NULL,
+  `weights` float NOT NULL,
+  `language` varchar(50) NOT NULL,
+  `nationality` varchar(30) NOT NULL,
+  `occupation` varchar(50) NOT NULL,
+  PRIMARY KEY (`member_id`)
+Note: In the "member_id" row, under "Null Index" we click the drop to select "PRIMARY" in order to make "member_id" the primary key in the table. 
+We will also check the box under A_I for Auto Increment of "member_id".
+We will select the right data type according to the information provided above under "Type" column and the exact Length/values indicated above.
+Step9: After completing the information, then we click on "save" to save the information in the new table created.
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `members`
+--
+
+CREATE TABLE IF NOT EXISTS `members` (
+  `member_id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(20) NOT NULL,
+  `date_of_birth` date NOT NULL,
+  `year` int(11) NOT NULL,
+  `heights` float NOT NULL,
+  `weights` float NOT NULL,
+  `language` varchar(50) NOT NULL,
+  `nationality` varchar(30) NOT NULL,
+  `occupation` varchar(50) NOT NULL,
+  PRIMARY KEY (`member_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Inserting data into table `members`
+--We can also run the SQL queries below to insert data in the table "members".
+
+INSERT INTO `members` (`firstname`, `lastname`, `date_of_birth`, `year`, `heights`, `weights`, `language`, `nationality`, `occupation`) VALUES
+('Abiodun', 'Abidemi', '1984-01-01', 1984, 6.1, 72, 'English', 'Nigerian', 'Graduate Assistant'),
+('Folashade', 'Abidemi', '1986-07-24', 1986, 5.9, 70, 'English', 'Nigerian', 'Banker'),
+('Ikeoluwa', 'Abidemi', '2015-02-27', 2015, 3.0, 34.0, 'Emglish', 'Nigerian', 'Student')
+('Michelle', 'Abidemi', '2018-10-17', 2018, 1.4, 19.1, 'English', 'Nigerian', 'Infant'),
+('Yemi', 'Adeogun', '1983-02-18', 1983, 5.8, 78, 'Chinese', 'Koren', 'Engineer'),
+('Dare', 'Surakat', '1980-11-25', 1980, 6.2, 105, 'French', 'French', 'Digital Marketer');
+
+

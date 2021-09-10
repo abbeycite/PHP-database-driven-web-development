@@ -1,0 +1,116 @@
+<!---
+  Abiodun Abidemi
+  CSCI 5060
+  Project
+  --->
+.header {
+  background-color: ivory;
+  color: brown;
+  margin: 0px;
+  padding: 20px;
+  height: 128px;
+}
+#items {
+	float: right;
+	width: 70%;
+	height: 450px;
+	margin: 20px 5px;
+	background-color: ivory;
+	padding: 15px;
+	color: green;
+}
+#formArea {
+  background-color: maroon ;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  text-align:center;
+  font-size: 20px;
+  height: 557px;
+  font-family: Times New Roman;
+}
+form {
+	text-align: center;
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+form label {
+	text-align: left;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.main {
+  background-color: maroon ;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  text-align:center;
+  font-size: 20px;
+  height: 400px;
+  font-family: Times New Roman;
+}
+.tableForm {
+	display:inline;
+}
+table {
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid black;
+}
+h3 { 
+    text-align: left;
+    font-size: 20px;	
+}
+h2 { 
+    text-align: center; 
+}
+h1 {
+	text-align:center;
+	font-family: Berlin Sans FB Demi ;
+    font-size: 30px;
+}
+img {
+  float: left;
+  height:128px;
+}
+p { 
+    float: right; 
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+a {
+	font-size: 23px;
+	display: inline-block;
+}
+li { 
+    font-size: 25px; 
+}
+.picture {
+	width:60px;
+	height:60px;
+}
+.clearall
+{
+	clear:both;
+}
